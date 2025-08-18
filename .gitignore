@@ -1,0 +1,79 @@
+# --- SO / Arquivos temporários ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+~$*
+*.tmp
+
+# --- Maven / Build ---
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
+
+# Mantemos o Maven Wrapper no repositório (não ignore .mvn/wrapper)
+.mvn/timing.properties
+
+# --- Logs e dumps ---
+*.log
+logs/
+hs_err_pid*
+replay_pid*
+*.hprof
+
+# --- IDEs ---
+# IntelliJ / JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# Pastas de saída comuns
+bin/
+out/
+
+# --- Spring Boot / Config local ---
+# Mantenha application.yml padrão versionado; ignore variações locais/ambiente
+application-*.local.yml
+application-*.local.yaml
+application-*.local.properties
+application-*.dev.yml
+application-*.dev.yaml
+application-*.dev.properties
+application-*.test.yml
+application-*.test.yaml
+application-*.test.properties
+
+# --- Segredos / Certificados ---
+.env
+.env.*
+*.keystore
+*.jks
+*.p12
+
+# --- Bancos de dados em arquivo (H2, etc.) ---
+*.mv.db
+*.h2.db
+*.db
+*.sqlite
+
+# --- Cobertura / Relatórios (a maioria já fica em target/) ---
+jacoco.exec
+
+# --- Extras JetBrains (caso .idea/ estivesse versionado por engano) ---
+/.idea/**/workspace.xml
+/.idea/**/tasks.xml
+/.idea/**/usage.statistics.xml
+/.idea/**/dictionaries
+/.idea/**/shelf
+/.idea/**/libraries
